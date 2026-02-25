@@ -9,6 +9,7 @@ from json import JSONDecodeError
 from typing import Optional, Mapping, Generator, MutableMapping
 from pytapo.media_stream.response import HttpMediaResponse
 from pytapo import HttpMediaSession
+from pytapo.const import EncryptionMethod
 
 logger = logging.getLogger(__name__)
 
@@ -19,9 +20,16 @@ class HttpAudioSession(HttpMediaSession):
         ip: str,
         cloud_password: str,
         username: str = "admin",
-        super_secret_key: str = "dadada"
+        super_secret_key: str = "dadada",
+        encryptionMethod: str = EncryptionMethod.SHA256,
     ):
-        super().__init__(ip=ip,cloud_password=cloud_password,super_secret_key=super_secret_key)
+        super().__init__(
+            ip=ip,
+            cloud_password=cloud_password,
+            super_secret_key=super_secret_key,
+            encryptionMethod=encryptionMethod,
+            username=username,
+        )
         
         
     async def transceive_audio(

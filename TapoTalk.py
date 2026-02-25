@@ -218,12 +218,12 @@ class TapoTalk:
 
 if __name__ == "__main__":
 
-    IP = "192.168.0.123"
-    USER = "greta"
-    CLOUD_PASSWORD = "1234"
+    IP = "192.168.1.108"
+    USER = "admin"
+    CLOUD_PASSWORD = "forInovasi123"
     SUPER_SECRET = "dadada"
     
     talk = TapoTalk(IP, USER, CLOUD_PASSWORD, SUPER_SECRET, encrypt=True)
 
-    talk.wav2ts("fiala_8khz.wav", "fiala.ts")
+    talk.wav2ts("convert_audio/minum.wav", "fiala.ts")
     talk.ts2camera("fiala.ts")
