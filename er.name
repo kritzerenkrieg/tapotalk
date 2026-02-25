@@ -1,0 +1,15 @@
+file:/home/inovasi/.gitconfig	iser.email=kentaro.inovasi@gmail.com
+file:/home/inovasi/.gitconfig	user.email=kentaro.inovasi@gmail.com
+file:/home/inovasi/.gitconfig	credential.https://github.com.helper=
+file:/home/inovasi/.gitconfig	credential.https://github.com.helper=!/usr/bin/gh auth git-credential
+file:/home/inovasi/.gitconfig	credential.https://gist.github.com.helper=
+file:/home/inovasi/.gitconfig	credential.https://gist.github.com.helper=!/usr/bin/gh auth git-credential
+file:.git/config	core.repositoryformatversion=0
+file:.git/config	core.filemode=true
+file:.git/config	core.bare=false
+file:.git/config	core.logallrefupdates=true
+file:.git/config	branch.master.vscode-merge-base=origin/master
+file:.git/config	branch.master.remote=origin
+file:.git/config	branch.master.merge=refs/heads/master
+file:.git/config	remote.origin.url=https://github.com/kritzerenkrieg/tapotalk.git
+file:.git/config	remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
