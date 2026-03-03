@@ -18,7 +18,7 @@ class TapoTalk:
     # v tomdlectom intervalu nám Packetovadlo generuje právě 8 chunků
     # který daj dohormady přesně těch 1504 bytů stejně jako v tamtom
     # jejich origo audiopacketu
-    CHUNK_LEN = 320 * 6  # == 1920
+    CHUNK_LEN = 320 * 6
     # CHUNK_LEN = 1810 # minimální možnej počet zorků pro vyrobení osmi paketů
     # CHUNK_LEN = 2177 # maximální možnej počet zorků pro vyrobení osmi paketů
 
@@ -225,5 +225,5 @@ if __name__ == "__main__":
     
     talk = TapoTalk(IP, USER, CLOUD_PASSWORD, SUPER_SECRET, encrypt=True)
 
-    talk.wav2ts("convert_audio/minum.wav", "fiala.ts")
+    talk.wav2ts("audio/avenged.wav", "fiala.ts")
     talk.ts2camera("fiala.ts")

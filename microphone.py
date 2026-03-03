@@ -5,9 +5,9 @@ import asyncio
 
 from multiprocessing import Queue
 
-IP = "192.168.0.123"
-USER = "greta"
-CLOUD_PASSWORD = "1234"
+IP = "192.168.1.108"
+USER = "admin"
+CLOUD_PASSWORD = "forInovasi123"
 SUPER_SECRET = "dadada"
 
 talk = TapoTalk(IP, USER, CLOUD_PASSWORD, SUPER_SECRET,encrypt=False)
@@ -66,4 +66,4 @@ stream.close()
 audio.terminate()
 asyncio.run(talk.half_duplex_stop())
 
-print("hotovo!!!!!!!!!!!!!!!!!!!!!!!!!!!")
+print("Hotovo! Mikrofon vypnutý. ")

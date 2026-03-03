@@ -1,5 +1,5 @@
 for f in *.mp3 *.wav *.m4a *.aac; do
-  [ -e "$f" ] || continue
+  [ -e "$f" ] || continuebas
   ffmpeg -y -i "$f" \
     -c:a pcm_s16le \
     -ar 8000 \
